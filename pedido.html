@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Brooklyn Burger - Pedido Online</title>
+  </head>
+
+  <body>
+    <div class="pedido__container">
+      <h2 class="pedido__title">
+        <a href="/index.html">Brooklyn Burger </a>
+      </h2>
+      <!-- Navegación -->
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">Pedido Online</li>
+          <li class="breadcrumb-item active" id="1" aria-current="page">
+            Selección
+          </li>
+          <li class="breadcrumb-item" id="2">Resumen</li>
+          <li class="breadcrumb-item" id="3">Estado</li>
+        </ol>
+      </nav>
+
+      <!-- Estado de la orden -->
+      <div class="pedido__contador">
+        Artículos seleccionados: <span id="contador"></span>
+      </div>
+      <div id="usuario"></div>
+
+      <!-- Secciones del breadcrumb -->
+      <div
+        id="section-1"
+        style="display: none"
+        class="pedido__seccion-container"
+      >
+        <h1 class="pedido__seccion-title">Selecciona tus artículos</h1>
+
+        <div class="pedido__menu-container" id="items-container"></div>
+        <div class="pedido__button-container">
+          <button id="carrito-button" class="pedido__button">
+            Añadir al carrito
+          </button>
+        </div>
+      </div>
+
+      <div
+        id="section-2"
+        style="display: none"
+        class="pedido__seccion-container"
+      >
+        <div class="pedido__seccion-title">Resumen de tu pedido</div>
+        <div id="selected-items-container"></div>
+        <div class="pedido__button-pago-container">
+          <button id="revisar-button" class="pedido__button">
+            Modificar pedido
+          </button>
+          <button id="pago-button" class="pedido__button">Pagar</button>
+        </div>
+      </div>
+      <div
+        id="section-3"
+        style="display: none; text-align: center"
+        class="pedido__seccion-container"
+      >
+        <div class="pedido__seccion-title" id="pedido-title">
+          ¡Gracias por confiar en Brooklyn Burger!
+        </div>
+
+        <p id="pedido-subtitle">Tu orden está en proceso...</p>
+
+        <!-- Temporizador -->
+        <div id="timer" class="pedido__barra-progreso">
+          <div id="progress-bar"></div>
+          <span id="moto">🏍️</span>
+        </div>
+        <div class="time">
+          <span id="minutes"></span>:<span id="seconds"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <!-- Script -->
+  <script src="script/pedido.js"></script>
+</html>

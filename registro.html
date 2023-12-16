@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Brooklyn Burger - Registro de Usuario</title>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style/style.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Open+Sans:wght@300&family=Oswald:wght@700&family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="registro__body">
+    <div class="registro__main-wrapper">
+      <header>
+        <h1 class="registro__title">
+          <a href="/index.html">
+            brooklyn<br />
+            burger</a
+          >
+        </h1>
+      </header>
+      <section>
+        <h2 class="registro__subtitle">Registro de Usuario</h2>
+        <form name="userForm" onsubmit="return validateForm()" method="post">
+          <label for="dni">DNI:</label>
+          <input
+            type="text"
+            name="dni"
+            id="dni"
+            required
+            placeholder="DNI"
+            class="registro__input-field"
+          />
+          <br />
+          <label for="name">Nombre y apellido:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            class="registro__input-field"
+          /><br />
+          <label for="phone">Teléfono: </label>
+          <input
+            type="text"
+            name="phone"
+            id="phone"
+            required
+            class="registro__input-field"
+          /><br />
+          <label for="email">Correo electrónico: </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            class="registro__input-field"
+          /><br />
+          <input
+            type="button"
+            id="editButton"
+            value="Edit"
+            class="registro__input-button hidden"
+            onclick="editForm()"
+          />
+          <input
+            type="reset"
+            value="Reset"
+            class="registro__input-button"
+            onclick="resetForm()"
+          />
+          <a href="/index.html" aria-label="Cancelar y volver al inicio">
+            <input
+              type="button"
+              value="Cancelar"
+              class="registro__input-button"
+            />
+          </a>
+
+          <input type="submit" value="Enviar" class="registro__input-button" />
+        </form>
+      </section>
+    </div>
+  </body>
+  <script src="script/registro.js"></script>
+</html>

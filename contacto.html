@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Brooklyn Burger - Registro de Usuario</title>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style/style.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Open+Sans:wght@300&family=Oswald:wght@700&family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body class="registro__body">
+    <div class="contacto__main-wrapper">
+      <header>
+        <h1 class="registro__title">
+          <a href="/index.html">
+            brooklyn<br />
+            burger</a
+          >
+        </h1>
+        <div class="contacto__info">
+          <h2 class="registro__subtitle">Información de contacto</h2>
+          <p>+34 567 543 456</p>
+          <p>Av. Universidad 15. Leganés, Madrid.</p>
+          <div class="social-icons">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+          </div>
+        </div>
+      </header>
+      <section>
+        <hr class="divider" />
+        <h3 class="contacto__contact-form-title">¡Envíanos un mensaje!</h3>
+        <form name="contactForm" onsubmit="return validateForm()" method="post">
+          <label for="name">Nombre:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            class="registro__input-field"
+          /><br />
+          <label for="email">Correo electrónico: </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            class="registro__input-field"
+          /><br />
+          <label for="mensaje">Mensaje: </label>
+          <textarea
+            required
+            rows="5"
+            cols="33"
+            class="registro__input-field"
+            name="mensaje"
+            id="mensaje"
+          >
+          </textarea>
+          <br />
+          <input
+            type="submit"
+            value="Enviar"
+            class="registro__input-button"
+            style="width: 100%"
+          />
+        </form>
+      </section>
+    </div>
+  </body>
+  <script src="/script/contacto.js"></script>
+</html>

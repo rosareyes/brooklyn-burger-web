@@ -1,0 +1,306 @@
+<!-- 
+  Práctica 2 - Javascript
+  UC3M
+  Autores: 
+        Rosa Reyes - 100434072
+        Carlos De Val - 100421888
+  -->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Restaurante Brooklyn Burger</title>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Open+Sans:wght@300&family=Oswald:wght@700&family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main class="main-wrapper">
+      <div class="main-wrapper__left-side">
+        <h1 class="title">
+          brooklyn<br />
+          burger
+        </h1>
+        <h2 class="subtitle">
+          ¡Bienvenido a Brooklyn Burger, el lugar donde la esencia de la street
+          food
+          <br />se fusiona con la mejor gastronomía!
+        </h2>
+        <iframe
+          class="video"
+          src="https://www.youtube.com/embed/Ip0tlyXBmE0?si=QXzGVXK5tzWTSwVg&amp;controls=0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; modestbranding; loop"
+        ></iframe>
+      </div>
+      <div class="main-wrapper__right-side">
+        <a
+          class="main-wrapper__right-side__item"
+          id="menu-trabajo"
+          href="#trabajo"
+        >
+          <div class="main-wrapper__right-side__item-text">
+            trabaja con nosotros
+          </div>
+          <div class="overlay"></div>
+        </a>
+
+        <a
+          class="main-wrapper__right-side__item"
+          id="menu-mesa"
+          href="/reserva.html"
+        >
+          <div class="main-wrapper__right-side__item-text">
+            reserva una mesa
+          </div>
+          <div class="overlay"></div>
+        </a>
+        <a
+          class="main-wrapper__right-side__item"
+          id="menu-restaurantes"
+          href="#restaurantes"
+        >
+          <div class="main-wrapper__right-side__item-text">
+            Nuestros restaurantes
+          </div>
+          <div class="overlay"></div>
+        </a>
+        <a
+          class="main-wrapper__right-side__item"
+          id="menu-registro"
+          href="/registro.html"
+        >
+          <div class="main-wrapper__right-side__item-text">
+            Registro de usuario
+          </div>
+          <div class="overlay"></div>
+        </a>
+        <a
+          class="main-wrapper__right-side__item"
+          id="menu-contacto"
+          href="/contacto.html"
+        >
+          <div class="main-wrapper__right-side__item-text">Contacto</div>
+          <div class="overlay"></div>
+        </a>
+        <a
+          class="main-wrapper__right-side__item"
+          id="menu-pedido"
+          href="/pedido.html"
+        >
+          <div class="main-wrapper__right-side__item-text">haz un pedido</div>
+          <div class="overlay"></div>
+        </a>
+      </div>
+    </main>
+
+    <div class="hamburger-menu-mobile">
+      <a href="/index.html" class="active" id="titulo_mobile"
+        >BROOKLYN BURGER</a
+      >
+      <!-- Enlaces de navegacion -->
+      <div id="hamburger-links">
+        <a href="#trabajo">Trabaja con nosotros</a>
+        <a href="/reserva.html">Reserva una mesa</a>
+        <a href="#restaurantes">Nuestros restaurantes</a>
+        <a href="/registro.html">Registro de usuario</a>
+        <a href="/contacto.html">Contacto</a>
+        <a href="/pedido.html">Haz un pedido</a>
+      </div>
+
+      <a
+        href="javascript:void(0);"
+        class="icon"
+        onclick="hamburgerMenu(); moveIcon(this)"
+        aria-label="menu"
+      >
+        <div class="barra1"></div>
+        <div class="barra2"></div>
+        <div class="barra3"></div>
+      </a>
+    </div>
+    <div class="section" id="trabajo">
+      <div class="section__text">
+        <p>
+          ¡Estamos buscando apasionados de la comida y amantes de las
+          hamburguesas para unirse a nuestro equipo en Brooklyn Burgers! Si eres
+          una persona entusiasta, comprometida y con un paladar exigente,
+          ¡podrías ser la persona que estamos buscando! En Brooklyn Burgers, no
+          solo servimos las mejores hamburguesas de la ciudad, sino que también
+          creemos en brindar experiencias excepcionales a nuestros clientes. Si
+          compartes nuestra pasión por la calidad y el servicio excepcional, te
+          invitamos a formar parte de nuestro equipo.
+        </p>
+        <p>
+          En Brooklyn Burgers, no solo obtendrás un empleo, sino que te unirás a
+          una familia apasionada por la gastronomía y la excelencia en el
+          servicio. Ofrecemos oportunidades de crecimiento profesional, un
+          ambiente de trabajo divertido y un equipo comprometido que valora tu
+          contribución. Ya sea que desees unirte a nuestro talentoso equipo de
+          cocina, ser un anfitrión amable y atento o brindar un servicio de
+          calidad en nuestras mesas, en Brooklyn Burgers encontrarás un lugar
+          donde puedes crecer y prosperar. Únete a nosotros y forma parte de la
+          deliciosa historia de Brooklyn Burgers. ¡Esperamos conocerte pronto!
+        </p>
+      </div>
+      <div class="section__gallery">
+        <h3 class="section__gallery-text-title">trabaja con nosotros</h3>
+        <div class="slider">
+          <ul class="slides">
+            <li id="slide-1-1">
+              <img src="images/img2.jpg" alt="slide img" class="slide-img" />
+            </li>
+            <li id="slide-1-2">
+              <img src="images/img3.jpg" alt="slide img" class="slide-img" />
+            </li>
+            <li id="slide-1-3">
+              <img src="images/img4.jpg" alt="slide img" class="slide-img" />
+            </li>
+            <li id="slide-1-4">
+              <img src="images/img5.jpg" alt="slide img" class="slide-img" />
+            </li>
+            <li id="slide-1-5">
+              <img src="images/img6.jpg" alt="slide img" class="slide-img" />
+            </li>
+          </ul>
+          <!-- para navegar entre slides -->
+          <a href="#slide-1-1">1</a>
+          <a href="#slide-1-2">2</a>
+          <a href="#slide-1-3">3</a>
+          <a href="#slide-1-4">4</a>
+          <a href="#slide-1-5">5</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="carta">
+      <div class="section__text">
+        <p>
+          ¡Bienvenido a nuestro emocionante mundo de sabores en Brooklyn
+          Burgers! Aquí, en nuestra sección "Descubre nuestra carta", te
+          invitamos a explorar una amplia variedad de hamburguesas gourmet y
+          deliciosas creaciones que te harán agua la boca. Cada plato ha sido
+          cuidadosamente diseñado para satisfacer tu apetito y deleitar tus
+          sentidos, utilizando ingredientes frescos y de la más alta calidad.
+        </p>
+
+        <p>
+          Desde nuestras clásicas hamburguesas con carne a la parrilla hasta
+          opciones vegetarianas y veganas que te sorprenderán, en nuestra carta
+          encontrarás algo para todos los gustos. Acompaña tu elección con
+          nuestras crujientes papas fritas caseras o una ensalada fresca y
+          completa tu experiencia con uno de nuestros indulgentes postres.
+          Además, no te pierdas nuestra selección de bebidas, desde refrescantes
+          batidos hasta cervezas artesanales locales. En Brooklyn Burgers, la
+          satisfacción del cliente es nuestra máxima prioridad, y estamos
+          seguros de que encontrarás algo que te encantará en nuestra carta.
+          ¡Prepárate para un viaje culinario único y delicioso!
+        </p>
+      </div>
+      <div class="section__gallery">
+        <h3 class="section__gallery-text-title">descubre nuestra carta</h3>
+        <div class="slider">
+          <ul class="slides">
+            <li id="slide-2-1">
+              <img src="images/img5.jpg" alt="slide img" class="slide-img" />
+            </li>
+            <li id="slide-2-2">
+              <img src="images/img3.jpg" alt="slide img" class="slide-img" />
+            </li>
+            <li id="slide-2-3">
+              <img src="images/img4.jpg" alt="slide img" class="slide-img" />
+            </li>
+            <li id="slide-2-4">
+              <img src="images/img5.jpg" alt="slide img" class="slide-img" />
+            </li>
+            <li id="slide-2-5">
+              <img src="images/img2.jpg" alt="slide img" class="slide-img" />
+            </li>
+          </ul>
+          <!-- para navegar entre slides -->
+          <a href="#slide-2-1">1</a>
+          <a href="#slide-2-2">2</a>
+          <a href="#slide-2-3">3</a>
+          <a href="#slide-2-4">4</a>
+          <a href="#slide-2-5">5</a>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="restaurantes">
+      <div class="section__text">
+        <p>
+          Explora la diversidad de experiencias culinarias que te ofrecemos en
+          nuestras cinco únicas locaciones de Brooklyn Burgers. Cada uno de
+          nuestros restaurantes está estratégicamente ubicado para brindarte un
+          sabor inconfundible de la auténtica esencia de Brooklyn, con un toque
+          de encanto local. Desde el corazón del centro de la ciudad hasta las
+          orillas de un tranquilo lago, cada lugar cuenta con su propio ambiente
+          y personalidad, pero todos comparten la misma dedicación a la calidad
+          de nuestros ingredientes y la satisfacción de nuestros clientes.
+        </p>
+
+        <p>
+          Ven y descubre nuestras locaciones en diferentes partes de la ciudad,
+          cada una con su propio encanto, pero todas con el sabor inconfundible
+          de Brooklyn Burgers. Ya sea que prefieras la energía del centro de la
+          ciudad, la relajación junto al lago o la atmósfera artística del East
+          End, encontrarás un rincón único para satisfacer tu apetito. Cada uno
+          de nuestros restaurantes comparte la misma pasión por la calidad y el
+          servicio excepcional, lo que garantiza una experiencia culinaria
+          inolvidable sin importar dónde elijas sentarte a disfrutar de nuestras
+          deliciosas hamburguesas. ¡Te esperamos en cualquiera de nuestras
+          locaciones para ofrecerte lo mejor de Brooklyn!
+        </p>
+      </div>
+      <div class="section__gallery">
+        <h3 class="section__gallery-text-title">nuestros restaurantes</h3>
+        <div class="slider">
+          <ul class="slides">
+            <li id="slide-3-1">
+              <img src="images/img3.jpg" alt="slide img" class="slide-img" />
+            </li>
+            <li id="slide-3-2">
+              <img src="images/img2.jpg" alt="slide img" class="slide-img" />
+            </li>
+            <li id="slide-3-3">
+              <img src="images/img4.jpg" alt="slide img" class="slide-img" />
+            </li>
+            <li id="slide-3-4">
+              <img src="images/img5.jpg" alt="slide img" class="slide-img" />
+            </li>
+            <li id="slide-3-5">
+              <img src="images/img6.jpg" alt="slide img" class="slide-img" />
+            </li>
+          </ul>
+          <!-- para navegar entre slides -->
+          <a href="#slide-3-1">1</a>
+          <a href="#slide-3-2">2</a>
+          <a href="#slide-3-3">3</a>
+          <a href="#slide-3-4">4</a>
+          <a href="#slide-3-5">5</a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <a href="#">Politíca de privacidad</a><a href="#">Cookies</a
+      ><a href="#">twitter</a><a href="#">facebook</a><a href="#">instagram</a>
+    </footer>
+  </body>
+  <!-- Local Script -->
+  <script src="script/home.js"></script>
+</html>
