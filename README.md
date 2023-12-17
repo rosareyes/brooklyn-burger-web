@@ -1,8 +1,9 @@
 <p align="center">
   <a href="https://brooklyn-burger-web.vercel.app/">
     <img src='https://github.com/rosareyes/rosareyes/assets/63470281/92581f28-95c3-4dc4-809a-c9192ede2ac4' width='200px'>
+    </a>
     <h1 align="center">Brooklyn Burger Web</h1>
-  </a>
+    <a href="https://brooklyn-burger-web.vercel.app/"><p align="center">Live demo</p>  </a>
 </p>
 
 Welcome to the GitHub repository of Brooklyn Burger Web, a UC3M university project for a UI/UX class. This webpage is designed with a focus on creating an accessible, usable, and engaging online presence for a fictional burger restaurant.
@@ -40,10 +41,10 @@ This website design follows the principles of Universal Design, ensuring that ou
 - **Predictable Layout:** The website maintains a consistent and predictable layout throughout.
 - **Input Assistance:** Forms and input fields provide assistance, error messages, and clear labels.
 
-## Contact
 
-Rosa Reyes: [LinkedIn](https://www.linkedin.com/in/rosaareyesc/)
+## Contact
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rosaareyesc/)
+[![Upwork](https://img.shields.io/badge/UpWork-6FDA44?style=for-the-badge&logo=Upwork&logoColor=white)](https://www.upwork.com/freelancers/~01bcf3b51bb38b47a8)
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rosareyes)
 
 Project Link: [https://github.com/rosareyes/brooklyn-burger-web](https://github.com/rosareyes/brooklyn-burger-web)
-
-Live Website: [https://brooklyn-burger-web.vercel.app/](https://brooklyn-burger-web.vercel.app/)
